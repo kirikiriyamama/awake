@@ -1,0 +1,112 @@
+html,body{
+	width: 100%;
+	height:100%;
+	overflow: hidden;
+	padding: 0;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: box;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	box-align: center;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	box-pack: center;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	-ms-flex-orient:vertical;
+	box-orient:vertical;
+}
+body{
+	background: url("../images/debut_light.png");	
+}
+.frame {
+	position: relative;
+	display: block;
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+}
+.frame:after {
+position: absolute;
+display: block;
+content: "";
+top: 0;
+left: 0;
+width: 300px;
+height: 300px;
+border-radius: 50%;
+overflow: hidden;
+box-shadow: inset 0 0 20px 0 rgba(0,0,0,0.5);
+}
+.frame .inner{
+	display: block;
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+}
+#bird{
+	width: 100px;
+	position: absolute;
+	z-index: 1;
+	top:50%;
+	left: 50%;
+	margin-top:-200px;
+	margin-left: -120px;
+	display: none;
+}
+
+.arrow{
+	width: 300px;
+	height: 100px;
+	top:50%;
+	left: 50%;
+	margin-top:-235px;
+	z-index: 100;
+	color: white;
+	font-size: 50px;
+	line-height: 100px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+
+.arrow_box {
+	position: absolute;
+	background: #88b7d5;
+	border: 4px solid #c2e1f5;
+}
+.arrow_box:after, .arrow_box:before {
+	right: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	
+}
+
+.arrow_box:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: #88b7d5;
+	border-width: 10px;
+	top: 50%;
+	margin-top: -10px;
+}
+.arrow_box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-right-color: #c2e1f5;
+	border-width: 16px;
+	top: 50%;
+	margin-top: -16px;
+}
+#message {
+	display: none;
+}
+
