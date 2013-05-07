@@ -1,3 +1,4 @@
 .bundle
 conf
 vendor
+.rvmrc

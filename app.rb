@@ -20,9 +20,10 @@ class Awake < Sinatra::Base
 	post '/' do
 		redirect '/' if params[:message] != 'awake'
 
-		for i in 1..5 do
+		5.time do
 			send_notify("#{DIR}/conf/nma", '起きろ，やまま！！', '', '', NMA::Priority::EMERGENCY)
 		end
+
 		'{message: success}'
 	end
 end

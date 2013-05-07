@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-source :rubygems
+source 'https://rubygems.org'
 
 gem 'sinatra', '~> 1.3', require: 'sinatra/base'
 gem 'ruby-notify-my-android', '~> 0.4'
